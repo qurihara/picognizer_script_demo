@@ -3,7 +3,7 @@ setup = function(){
 }
 onfire = function(){
   console.log("recognized!!");
-  alert("recognized!");
+  //alert("recognized!");
   document.bgColor = 'red';
   setTimeout(function(){
     document.bgColor = 'white';
