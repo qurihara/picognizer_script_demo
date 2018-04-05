@@ -8,7 +8,6 @@ onfire = function(){
   setTimeout(function(){
     document.bgColor = 'white';
   },1000);
-  var url = webhookurl;
   var data = {
     from: "picognizer"
   };
