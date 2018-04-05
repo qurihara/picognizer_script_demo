@@ -1,6 +1,5 @@
 setup = function(){
   console.log("initialized.");
-  payload = para["payload"];
   webhookurl = para["webhookurl"];
 }
 onfire = function(){
@@ -10,9 +9,12 @@ onfire = function(){
     document.bgColor = 'white';
   },1000);
   var url = webhookurl;
+  var data = {
+    from: "picognizer"
+  };
   $.ajax({
     type: "POST",
     url: webhookurl,
-    data: JSON.parse(payload)
+    data: data
   });
 }
